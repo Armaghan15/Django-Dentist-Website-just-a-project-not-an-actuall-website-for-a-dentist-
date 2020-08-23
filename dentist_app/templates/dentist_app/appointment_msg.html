@@ -1,0 +1,33 @@
+{% extends 'dentist_app/base.html' %}
+{% load static %}
+
+{% block title %}
+  Dentures - Contact
+{% endblock %}
+
+
+{% block content %}
+    <div class="site-blocks-cover overlay" style="background-image: url({% static 'dentist_app/images/hero_1.jpg' %});">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 mx-auto text-center">
+            <h1>Thanks for requesting an appointment</h1>
+            <br/>
+              <a href="{% url 'home' %}" class="btn btn-white">Go back to the main site</a>
+
+
+              <br/>
+              <br/>
+              <br/>
+              <h3 style="color: white;">We've recievedyour appointment request <strong>{{full_name}}</strong>, we will give you a confirmation call on the given number shortly.</h3>
+              <br/>
+              <p style="color: white;"><strong>Note:  </strong>This appointment has not been confirmed yet, we will give you a confirmation email or call shortly on the given Phone Number and Email Address</p>
+              <br/>
+              <h1>{{appointment.full_name}}</h1>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+

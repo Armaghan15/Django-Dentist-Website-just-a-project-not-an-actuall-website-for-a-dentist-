@@ -1,0 +1,94 @@
+{% extends 'dentist_app/base.html' %}
+{% load static %}
+
+
+{% block title %}
+  Dentures - Testimonials
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="site-blocks-cover overlay" style="background-image: url({% static 'dentist_app/images/hero_1.jpg' %});">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 mx-auto text-center">
+            <h1>Client's Testimonials</h1>
+            <p>Checkout our clien testimonials for more information about our services and the experience of our clients with us.</p>
+            <p>
+              <a href="{% url 'services_and_pricing' %}" class="btn btn-white">Check Out Our Services</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+       
+          <div class="col-lg-3 col-6 col-sm-6 col-md-4 mb-4">
+            <div class="client">
+              <div class="d-flex name-photo align-items-center mb-4">
+                <div class="name">
+                  <h3>Chad Hawkins</h3>
+                  <span>Customer</span>
+                </div>
+                <div class="img ml-auto">
+                  <img src="{% static 'dentist_app/images/person_4.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="client-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consequuntur rerum, iusto accusamus, numquam et vero aliquam delectus accusantium quo!</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 col-sm-6 col-md-4 mb-4">
+            <div class="client">
+              <div class="d-flex name-photo align-items-center mb-4">
+                <div class="name">
+                  <h3>Anothany Pulisic</h3>
+                  <span>Customer</span>
+                </div>
+                <div class="img ml-auto">
+                  <img src="{% static 'dentist_app/images/client_2.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="client-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consequuntur rerum, iusto accusamus, numquam et vero aliquam delectus accusantium quo!</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 col-sm-6 col-md-4 mb-4">
+            <div class="client">
+              <div class="d-flex name-photo align-items-center mb-4">
+                <div class="name">
+                  <h3>Riccardo Gilliam</h3>
+                  <span>Customer</span>
+                </div>
+                <div class="img ml-auto">
+                  <img src="{% static 'dentist_app/images/client_3.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="client-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consequuntur rerum, iusto accusamus, numquam et vero aliquam delectus accusantium quo!</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 col-sm-6 col-md-4 mb-4">
+            <div class="client">
+              <div class="d-flex name-photo align-items-center mb-4">
+                <div class="name">
+                  <h3>Georgina Smith</h3>
+                  <span>Customer</span>
+                </div>
+                <div class="img ml-auto">
+                  <img src="{% static 'dentist_app/images/client_4.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="client-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consequuntur rerum, iusto accusamus, numquam et vero aliquam delectus accusantium quo!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
